@@ -12,6 +12,6 @@ int main(void)
     printf("enter the second input");
     scanf("%d", &y);
     int c = bitxor(x, y);
-    printf("output : %d\n", c);
+    printf("output : %d \n", c);
     return 0;
 }
