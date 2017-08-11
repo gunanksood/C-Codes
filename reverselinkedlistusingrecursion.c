@@ -9,7 +9,7 @@ struct node
 struct node* head;
 struct node* create_ll(int d)
 {
-    struct node* ins = malloc(sizeof(struct node));
+    struct node* ins =(struct node *) malloc(sizeof(struct node));
     ins->data = d;
     if(head == NULL)
     {
