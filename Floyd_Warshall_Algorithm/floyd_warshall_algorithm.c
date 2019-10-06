@@ -13,7 +13,7 @@ int min(int a,int b)
 }
 int main()
 {
-    int n,m;             // n-> Number of Vertices, m-> Number of Edges
+    int n,m;             // n-> Number of Vertices, m-> Number of unidirectional Edges
     scanf("%d %d",&n,&m);
     int AdjList[n][n];   // Adjlist-> Adjacency list
     for(int i=0;i<n;i++)
