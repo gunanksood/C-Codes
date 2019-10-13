@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void TOH(int n,char beg,char aux,char end)
+{
+    TOH(n-1,beg,end,aux);
+    print("%c --> %c",beg,end);
+    TOH(n-1,aux,beg,end);
+}
+void main()
+{
+  int n;
+  char a='a',b='b',c='c';
+  printf("enter the number of rings");
+  scanf("%d",&n);
+  TOH(n,a,b,c);
+}
