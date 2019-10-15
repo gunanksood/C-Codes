@@ -107,3 +107,8 @@ int main()
 	return 0; 
 } 
 
+
+Output :
+
+Preorder of the constructed tree : 
+1 2 4 8 5 3 6 7 
