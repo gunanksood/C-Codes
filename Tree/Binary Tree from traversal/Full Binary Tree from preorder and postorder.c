@@ -92,3 +92,9 @@ int main ()
 
 	return 0; 
 } 
+
+
+Output:
+
+Inorder traversal of the constructed tree:
+8 4 9 2 5 1 6 3 7
