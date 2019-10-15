@@ -98,3 +98,9 @@ int main()
 	printInorder(root); 
 	getchar(); 
 } 
+
+ Output:
+
+Inorder traversal of the constructed tree is 
+D B E A F C
+
