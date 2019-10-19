@@ -14,7 +14,7 @@ void preorder(node *);
 
 int main()
 {
-    char ch;
+    char c;
     node *root = NULL, *temp;
 
     do
@@ -27,8 +27,8 @@ int main()
 
         printf("Do you want to enter more(y/n)?");
         getchar();
-        scanf("%c", &ch);
-    } while (ch == 'y' | ch == 'Y');
+        scanf("%c", &c);
+    } while (c == 'y' | c == 'Y');
 
     printf("Preorder Traversal: ");
     preorder(root);
