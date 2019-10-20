@@ -1,0 +1,12 @@
+It is an efficient program to find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.
+In the following code , you have to first input a number n (size of the input array ).Then in the next line you have to enter n, spaced integers(A[i]) of which you have to find the largest sum of subarray possible.
+
+
+Constraints:
+0<=n<10000
+-10000<=A[i]<10000
+
+
+
+for further details watch this video:https://www.youtube.com/watch?v=86CQq3pKSUw
+ 

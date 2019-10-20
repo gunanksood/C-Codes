@@ -1,0 +1,4 @@
+Here the code will be given two integers upon running and it will print out the HCF among them . 
+
+
+For further details :https:https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
