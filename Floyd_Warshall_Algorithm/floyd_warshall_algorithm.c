@@ -45,6 +45,8 @@ int main()
             for(int j=0;j<n;j++)
             {
                 AdjList[i][j]=min((AdjList[i][k]+AdjList[k][j]),AdjList[i][j]);
+		// If vertex k is on the shortest path from i to j, 
+		//then update the value of AdjList[i][j]
             }
         }
     }
