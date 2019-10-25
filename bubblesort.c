@@ -1,40 +1,36 @@
-// Optimized bubble sort in C
+/*Bubble sort code */
+ 
 #include <stdio.h>
-void bubbleSort(int arrayay[], int size)
-{
-  for (int step = 0; step & lt; size - 1; ++step)
-  {
-   
-    int swapped = 0;
-    for (int i = 0; i & lt; size - step - 1; ++i)
-    {
-     
-      if (arrayay[i] & gt; arrayay[i + 1])
-      {
-        int temp = arrayay[i];
-        arrayay[i] = arrayay[i + 1];
-        arrayay[i + 1] = temp;
-        swapped = 1;
-      }
-    }
-   
-    if (swapped == 0)
-      break;
-  }
-}
-void printarrayay(int arrayay[], int size)
-{
-  for (int i = 0; i & lt; size; ++i)
-  {
-    printf("%d  ", arrayay[i]);
-  }
-  printf("\n");
-}
+ 
 int main()
 {
-  int data[] = {-2, 45, 0, 11, -9};
-  int size = sizeof(data) / sizeof(data[0]);
-  bubbleSort(data, size);
-  printf("Sorted Array in Ascending Order:\n");
-  printarrayay(data, size);
+  int array[100], n, c, d, swap;
+ 
+  printf("Enter number of elements\n");
+  scanf("%d", &n);
+ 
+  printf("Enter %d integers\n", n);
+ 
+  for (c = 0; c < n; c++)
+    scanf("%d", &array[c]);
+ 
+  for (c = 0 ; c < n - 1; c++)
+  {
+    for (d = 0 ; d < n - c - 1; d++)
+    {
+      if (array[d] > array[d+1]) /* For decreasing order use < */
+      {
+        swap       = array[d];
+        array[d]   = array[d+1];
+        array[d+1] = swap;
+      }
+    }
+  }
+ 
+  printf("Sorted list in ascending order:\n");
+ 
+  for (c = 0; c < n; c++)
+     printf("%d\n", array[c]);
+ 
+  return 0;
 }
