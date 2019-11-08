@@ -40,14 +40,10 @@ void main()
             printf("\n\t EXIT POINT ");
             break;
         }
-        default:
-        {
-            printf ("\n\t Please Enter a Valid Choice(1/2/3/4)");
-        }
-        getch();
-        }
-    }
-    while(choice!=4);
+        default: printf ("\n\t Please Enter a Valid Choice(1/2/3/4)");      
+       
+        }while(choice!=4);
+       getch();
 }
 void push()
 {
