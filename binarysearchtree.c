@@ -25,7 +25,7 @@ int main()
         else
             insert(root, temp);
 
-        printf("Do you want to enter more(y/n)?");
+        printf("Do you want to continue(y/n)?");
         getchar();
         scanf("%c", &ch);
     } while (ch == 'y' | ch == 'Y');
