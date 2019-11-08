@@ -2,12 +2,7 @@
 #include<stdio.h>
 #include<time.h>
 
-int fibonacci(int n)
-{
-if (n <= 1)
-    return n;
-return fibonacci(n-1) + fibonacci(n-2);
-}
+int fibo(int);
 
 int main ()
 {
@@ -15,11 +10,11 @@ int n = 40;
 
 clock_t begin, end;
 
-double time_spent;
+double time_spent=0.0;
 
 begin = clock();
 
-printf("%d\n", fibonacci(n));
+printf("%d \n", fibo(n));
 
 end = clock();
 
@@ -29,5 +24,13 @@ printf("\nTime Taken %lf ", time_spent);
 
 getchar();
 return 0;
+}
+
+int fibo(int n)
+{
+if (n <= 1)
+    return n;
+  else
+return fibo(n-1) + fibo(n-2);
 }
 
