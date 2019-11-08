@@ -6,6 +6,7 @@ int main(void)
 {
     int c, nl, nc, nw,state;
     nl = nc = nw = 0;
+    printf("Enter text here with Ctrl+D as EOF\n\r");
     while((c = getchar()) != EOF)
     {
         nc++;
