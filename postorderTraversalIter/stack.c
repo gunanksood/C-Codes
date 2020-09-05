@@ -26,7 +26,7 @@ void push(tree *adr, node **st)
   (*st) = nn;
 }
 
-void pop(node **st)
+node *pop(node **st)
 {
   if (isempty(*st))
   {
@@ -34,7 +34,7 @@ void pop(node **st)
   }
   node *temp = (*st);
   (*st) = (*st)->next;
-  free(temp);
+  return temp;
 }
 
 void display(node *st)

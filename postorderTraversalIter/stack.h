@@ -13,6 +13,6 @@ node *getNode(tree *c);
 void display(node *st);
 int isempty(node *st);
 void push(tree *adr, node **st);
-void pop(node **st);
+node *pop(node **st);
 
 #endif
